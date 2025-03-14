@@ -3,10 +3,14 @@ import xgboost as xgb
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
+import os
 
 from Load_Public_Dataset import load_and_prepare_dataset
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error, r2_score
+
+# Define the save location for the final csv file
+network_drive = r"C:\Users\GordonDoggett\Downloads\BPP\Data Science Professional Practice\Assignments"
 
 # Load the dataset
 calories_df_bmi = load_and_prepare_dataset()
@@ -133,3 +137,18 @@ metrics_df = pd.DataFrame({
 })
 print("\nComparison of Model Performance:")
 print(metrics_df)
+
+# Change Gender column back to categorical values
+calories_df_bmi['Gender'] = calories_df_bmi['Gender'].replace({0: 'Female', 1: 'Male'})
+print("Converted Gender Column back to categorical")
+
+# Create a DataFrame with the predicted values and features
+final_output = calories_df_bmi[['Age', 'Gender', 'Duration', 'Heart_Rate', 'Body_Temp', 'BMI', 'Calories']]
+final_output['Predicted_Calories'] = xgb_model.predict(X)
+print("Final output DataFrame created")
+
+# Save the final DataFrame to a csv file
+csv_path = os.path.join(network_drive, "Calories Prediction.csv")
+final_output.to_csv(csv_path, index=False)
+
+print(f"\nFinal output saved to: {csv_path}")
