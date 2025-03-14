@@ -88,11 +88,12 @@ def load_and_prepare_dataset():
     calories_df_bmi = calories_df.copy()
     calories_df_bmi['Weight'] = calories_df_bmi['Weight'].astype(float)
     calories_df_bmi['Height'] = calories_df_bmi['Height'].astype(float)
-    calories_df_bmi['BMI'] = calories_df_bmi['Weight'] / (calories_df_bmi['Height'] ** 2)
+    calories_df_bmi['Height_m'] = calories_df_bmi['Height'] / 100
+    calories_df_bmi['BMI'] = calories_df_bmi['Weight'] / (calories_df_bmi['Height_m'] ** 2)
     print("Copy of the dataset with BMI calculated")
 
     # Drop the Weight and Height columns
-    calories_df_bmi.drop(['Weight', 'Height'], axis=1, inplace=True)
+    calories_df_bmi.drop(['Weight', 'Height', 'Height_m'], axis=1, inplace=True)
     print("Dropped Weight and Height columns")
 
     # Print the correlation for the new dataset
