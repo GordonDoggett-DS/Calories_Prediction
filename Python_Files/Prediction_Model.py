@@ -10,7 +10,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error, r2_score
 
 # Define the save location for the final csv file
-network_drive = r"C:\Users\GordonDoggett\Downloads\BPP\Data Science Professional Practice\Assignments"
+# CHANGE "YOUR PATH" TO YOUR PATH WHERE YOU WANT THE FILE SAVED
+network_drive = r"YOUR_PATH"
 
 # Load the dataset
 calories_df_bmi = load_and_prepare_dataset()
