@@ -50,7 +50,7 @@ Creating a final output of columns and an ETL diagram was part of the data engin
 
 *Fig3. The ETL process showing the flow of data including data cleansing and transformation before visualising in PowerBI. This flow allows full automation of processing the data to keep it upto date and retraining the model where required*
 
-![ETL_Flow](Assets/ETL_Flow.png)
+![ETL_Workflow](Assets/ETL_Workflow.png)
 
 The data was loaded utilising the Kaggle API adding the data to a Pandas data frame. Additional data checks were performed identifying data quality as shown in Fig2. Additional EDA work is summarised below, but full code was be found in GitHub https://github.com/GordonDoggett-DS/Calories_Prediction/blob/main/Load_Public_Dataset.py.
 
