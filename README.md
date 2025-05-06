@@ -85,3 +85,49 @@ The full report has minimal white space with interactivity allowing deeper analy
 
 ![PowerBI_Report](Assets/PowerBI_Report.png)
 
+## Data Analytics
+
+This project utilises an xgboost prediction model. The model allows for nonlinear relationships to be considered compared to linear regression, linear regression works in trying to fit to a straight line, it was suggested during literature research that the MAE would be higher for this subject.
+
+The model utilises several different Python libraries to plot results and accuracy metrics, utilising the python scikit-learn library splitting into train/test datasets, calculating both the MAE score and r2 score, the model uses an industry standard of 80/20 split. Fig9 shows the results of the actual vs predicted values.
+
+
+*Fig9. Scatter plot to show the actual vs predicted values, if the markers were on the line, it would represent a perfect prediction, as can be seen the markers on most data points are closer to the line representing an accurate model.*
+
+![Actual_VS_Predicted](Assets/Actual_VS_Predicted.png)
+
+The code reviews feature importance, this was a key part of the analysis relating directly to the original research question of which personal and workout features directly relate to the number of calories burned. The standout feature here shown in Fig10 is the duration of the workout.
+
+*Fig10. Shows that duration has a large influence on predicting the calories burned where BMI and body temperature have a very small effect on the prediction and therefore could be removed to simplify the model.*
+
+![Feature_Importance](Assets/Feature_Importance.png)
+
+The accuracy of the model was tested to see how well it has predicted the calories burned. The scores shown in Fig11 highlights the model performs accurately with a R2 score showing 99.7% of variance in the target variable is predictable from the features. The MAE score 2.44 suggests on average that the predictions in the test set of data are 2.44 calories away from the actual value.
+
+*Fig11. Shows the values returned to the screen in Python of the accuracy, MAE and R2 scores of the model.*
+
+![Model_Accuracy](Assets/Model_Accuracy.png)
+
+Feature importance and model accuracy was rerun. Fig12 shows the feature importance without the duration whilst Fig13 shows the updated accuracy.
+
+*Fig12. The importance of the features with duration removed, heart rate is now the most important feature to predict the calories burned where body temperature is now a more important feature than previously.*
+
+![Feature_Importance_WOD](Assets/Feature_Importance_WOD.png)
+
+*Fig 13. This shows the accuracy, R2 and MAE score of the model with and without the duration feature, although it has decreased the accuracy, the MAE has increased the model is still accurate, but the prediction of calories burned is now on average out by 10.58 calories.*
+
+![Model_Accuracy_WOD](Assets/Model_Accuracy_WOD.png)
+
+
+When processing data through an analytical model it must be considered what is the purpose of processing the data, is there any legal or regulatory obligations to consider and does the data introduce bias to decision making. When designing the model these elements were taken into consideration and that is why check such as gender distribution, age distribution was complete during data processing.
+
+## Recommendations
+
+Recommendations for this project is inputting new data checking, how well the model would generalise with the updated dataset, having such a high R2 score could indicate overfitting or synthetic data. Introducing new real-world data would identify this concern.
+
+Another improvement would be to remove the BMI and body temperature features due to the low feature importance and experiment with different variables reviewing model impact. 
+
+Use the data and predictions to generate a personalised workout plan, based on the calories burnt requested producing a workout plan that can be devised with the duration considering the physical attributes of the individual.
+
+
+
