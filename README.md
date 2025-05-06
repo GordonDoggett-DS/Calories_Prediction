@@ -18,6 +18,6 @@ A hypothesis made was that males will burn a significantly higher number of calo
 
 Fig1. Below show the number of calories burned split by gender which although males do typically burn more calories this is not by a significant margin.
 
-![Calories Burned By Gender](Assets/Calories Burned By Gender.png)
+![Calories Burned By Gender](Assets/Calories_Burned_By_Gender.png)
 
 
