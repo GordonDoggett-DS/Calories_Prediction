@@ -55,10 +55,15 @@ Creating a final output of columns and an ETL diagram was part of the data engin
 The data was loaded utilising the Kaggle API adding the data to a Pandas data frame. Additional data checks were performed identifying data quality as shown in Fig2. Additional EDA work is summarised below, but full code was be found in GitHub [here](https://github.com/GordonDoggett-DS/Calories_Prediction/tree/main/Python_Files).
 
 •	Display basic information e.g.  data types and statistics
+
 •	Update categorial variable to numeric values for Gender
+
 •	Check for missing values and duplicates
+
 •	Remove potential personal identifiers - not required and abides to data minimisation under GDPR
+
 •	Graphs to check for data distribution and outliers
+
 •	Correlation of features, feature engineering adding BMI
 
 The reason why BMI was utilised was due to the correlation between height and weight therefore simplifying the model, removing the two variables reduces the chances of overfitting the model.
@@ -68,9 +73,13 @@ The reason why BMI was utilised was due to the correlation between height and we
 The data used in PowerBI is the CSV file that was produced at the end of the Python script, transforming as per the below steps:
 
 •	Promoted first row to headers
+
 •	Changed data types
+
 •	Updated column names
+
 •	Added grouping
+
 •	Reordered columns 
 
 The visualisations used in the report were aimed at an executive audience with a low technical ability, the report has minimal visualisations due to best practises to not utilise too many visualisations on a page as it affects performance and readability. 
@@ -128,6 +137,3 @@ Recommendations for this project is inputting new data checking, how well the mo
 Another improvement would be to remove the BMI and body temperature features due to the low feature importance and experiment with different variables reviewing model impact. 
 
 Use the data and predictions to generate a personalised workout plan, based on the calories burnt requested producing a workout plan that can be devised with the duration considering the physical attributes of the individual.
-
-
-
