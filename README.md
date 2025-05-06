@@ -36,7 +36,7 @@ The combination of the above tools allowed for a detailed version-controlled dat
 
 ## Data Engineering
 
-The public dataset from Kaggle with 15,000 records was used, the dataset can be used for multiple data science projects including analysing trends and prediction models, data can be found at https://www.kaggle.com/datasets/ruchikakumbhar/calories-burnt-prediction.
+The public dataset from Kaggle with 15,000 records was used, the dataset can be used for multiple data science projects including analysing trends and prediction models, data can be found [here]([https://github.com/GordonDoggett-DS/Calories_Prediction/tree/main/PBIX_Files](https://www.kaggle.com/datasets/ruchikakumbhar/calories-burnt-prediction)).
 
 The dataset has a usability of 10 on Kaggle due to its completeness, credibility and compatibility. As mentioned in (Gupta, 2023) “The rule of ten states that it costs ten times as much to complete a unit of work when the data is flawed than when the data is perfect”. Kaggle has a data quality feature as shown in Fig2.
 
