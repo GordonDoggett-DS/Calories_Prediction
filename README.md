@@ -20,5 +20,19 @@ A hypothesis made was that males will burn a significantly higher number of calo
 
 ![Calories Burned By Gender](Assets/Calories_Burned_By_Gender.png)
 
+## Data Infrastructure & Tools
+
+The data tool used in this are as follows:
+
+•	API – used to collect the data from Kaggle enabling automation of the data feed and removing human error risk.
+
+•	Python – programming language utilised as it’s widely utilised in the data science industry and has a vast number of pre-built libraries, R was considered, Python was chosen due to being a more general language with wider audience exposure. The downside is that libraries can become deprecated or out of date quickly.
+
+•	PowerBI – chosen for the visualisation of the results, its powerful analytical features making trends and patterns easier to spot. Tableau was considered but is a less exposed tool in the data industry. 
+
+•	GitHub – host the code easily linking to data science portfolios, this helped to demonstrate knowledge of different methods and models, GitHub is free to use and easy to setup. It enables version controlling providing opportunity for feedback and recommendations. The disadvantage of using GitHub is that it the steeper learning curve.
+
+The combination of the above tools allowed for a detailed version-controlled data science project creation following industry best practices whilst showcasing different tools and purposes during different stages of the project.
+
 
 
