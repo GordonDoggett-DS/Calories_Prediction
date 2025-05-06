@@ -16,8 +16,8 @@ During the research, papers for previously completed calorie prediction models w
 
 A hypothesis made was that males will burn a significantly higher number of calories than females, the results disprove this hypothesis as shown in Fig1.
 
-Fig1. Below show the number of calories burned split by gender which although males do typically burn more calories this is not by a significant margin.
-
+*Fig1. Below show the number of calories burned split by gender which although males do typically burn more calories this is not by a significant margin.*
 ![Calories Burned By Gender](Assets/Calories_Burned_By_Gender.png)
+
 
 
