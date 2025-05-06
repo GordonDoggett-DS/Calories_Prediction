@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 def load_and_prepare_dataset():
 
     # setting the path to save the data and make the directory if it doesn't exist
-    # CHANGE "USER"
+    # CHANGE SAVE PATH TO YOUR PATH WHERE YOU WANT THE FILE SAVED
     save_path = r"C:\Users\USER\"
     os.makedirs(save_path, exist_ok=True)
 
