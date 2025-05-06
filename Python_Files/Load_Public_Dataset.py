@@ -8,7 +8,8 @@ import matplotlib.pyplot as plt
 def load_and_prepare_dataset():
 
     # setting the path to save the data and make the directory if it doesn't exist
-    save_path = r"C:\Users\GordonDoggett\Downloads\BPP\Data Science Professional Practice\Assignments"
+    # CHANGE "USER"
+    save_path = r"C:\Users\USER\"
     os.makedirs(save_path, exist_ok=True)
 
     # Authenticate with Kaggle and download the dataset
